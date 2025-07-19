@@ -520,3 +520,36 @@ h2 {
   cursor: pointer;
   background-color:#710707;
 }
+
+.gallery {
+  height: 2200px;
+  padding: 75px 0;
+  background-color: #030303;
+  overflow: hidden;
+}
+
+.gallery__content {
+  position: relative;
+  display: flex;
+  margin-top: 75px;
+  column-gap: 36px;
+  justify-content: space-between;
+}
+
+.gallery__content:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69%, #000000 85%);
+}
+
+.gallery__content-column.space {
+  margin-top: 50px;
+}
+
+.gallery__img {
+  width: 456px;
+  margin-bottom: 20px;
+}
+
+
