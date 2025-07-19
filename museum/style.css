@@ -387,17 +387,17 @@ h2 {
   background: #C4C4C4;
 }
 
-.valume-button {
+.volume-button {
   background: none;
   overflow: hidden;
   border: none;
 }
 
-.valume-button:hover {
+.volume-button:hover {
   cursor: pointer;
 }
 
-.progress-valume {
+.progress-volume {
   background: linear-gradient(to right, #710707 0%, #710707 44%, #C4C4C4 44%, #C4C4C4 100%);
   height: 8px;
   width: 155px;
@@ -406,7 +406,7 @@ h2 {
   -webkit-appearance: none;
 }
 
-.progress-valume::-webkit-slider-thumb {
+.progress-volume::-webkit-slider-thumb {
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -454,7 +454,7 @@ h2 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-image: url(assets/img/mona-lisa.jpg);
+  background-image: url(assets/img/welcome-slider/1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -552,4 +552,131 @@ h2 {
   margin-bottom: 20px;
 }
 
+.tickets {
+  padding: 75px 0;
+}
 
+.tickets__content {
+  display: flex;
+}
+
+.tickets__purchase {
+  display: flex;
+  flex: 50%;
+  justify-content: space-between;
+  padding-left: 60px;
+}
+
+.form-title {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+.ticket__option-1 {
+  margin-bottom: 50px;
+}
+
+.option-check {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.inp:hover {
+  cursor: pointer;
+}
+
+.option-check input[type="radio"] {
+  accent-color: black;
+  transform: scale(1.3);
+}
+
+.checkmark-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  padding-left: 15px;
+}
+
+.ticket__amount {
+  text-align: end;
+}
+
+.ticket__option-2{
+  margin-bottom: 25px;
+}
+
+.amount-text {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  margin: 10px 0 15px 25px;
+  text-align: start;
+}
+
+.minus {
+  width: 16px;
+  margin-left: 12px;
+}
+
+.minus:hover {
+  cursor: pointer;
+}
+
+.plus {
+  width: 18px;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+.number-input {
+  display: inline-flex;
+  width: 150px;
+  height: 50px;
+  border: 3px solid #000000;
+  overflow: hidden;
+}
+
+.number-input__field::-webkit-outer-spin-button,
+.number-input__field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-input__field {
+  width: 86px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 22px;
+}
+
+.total {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 1.65px;
+  margin: 50px 0 60px;
+}
+
+.buy-now {
+  width: 175px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  background-color: #000000;
+}
+
+.buy-now:hover {
+  color: #000000;
+  background-color:#9D8665;
+  cursor: pointer;
+}

@@ -33,7 +33,7 @@
               <a href="#gallery" class="header__nav-link">Gallery</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">Tickets</a>
+              <a href="#tickets" class="header__nav-link">Tickets</a>
             </li>
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">Contacts</a>
@@ -161,10 +161,10 @@
             <img src="assets/svg/play-button.svg" alt="play-button">
           </button>
           <input type="range" value="54" min="0" max="100" step="1" class="progress-video">
-          <button class="valume-button">
-            <img src="assets/svg/volume.svg" alt="valume-button">
+          <button class="volume-button">
+            <img src="assets/svg/volume.svg" alt="volume-button">
           </button>
-          <input type="range" value="44" min="0" max="100" step="1" class="progress-valume">
+          <input type="range" value="44" min="0" max="100" step="1" class="progress-volume">
           <button class="full-screen-button">
             <img src="assets/svg/full-screen.svg" alt="full-screen">
           </button>
@@ -245,6 +245,53 @@
         </div>
         </div>
       </div>
+      </div>
+    </section>
+    <section id="tickets" class="tickets">
+      <div class="container">
+        <h2 class="section-title gold">BUY TICKETS</h2>
+        <div class="line-container">
+          <div class="line"></div>
+        </div>
+        <div class="tickets__content">
+          <img src="assets/img/gallery-nude.jpg" alt="gallery-img">
+          <form class="tickets__purchase" action="#">
+            <div class="ticket__type">
+              <h3 class="ticket__option-1 form-title">Ticket Type</h3>
+              <label class="option-check">
+                <input class="inp" type="radio" checked="checked" name="ticket-check">
+                <span class="checkmark-text">Permanent exhibition</span>
+              </label>
+              <label class="option-check">
+                <input class="inp" type="radio" name="ticket-check">
+                <span class="checkmark-text">Temporary exhibition</span>
+              </label>
+              <label class="option-check">
+                <input class="inp" type="radio" name="ticket-check">
+                <span class="checkmark-text">Combined Admission</span>
+              </label>
+            </div>
+            <div class="ticket__amount">
+              <h3 class="ticket__option-2 form-title">Amount</h3>
+              <label class="amount-text">Basic 18+</label>
+              <div class="number-input">
+                <img class="minus" src="assets/svg/minus.svg" alt="minus">
+                <input type="number" class="number-input__field" value="1" min="1">
+                <img class="plus" src="assets/svg/plus.svg" alt="plus">
+              </div>
+              <label class="amount-text">Senior 65+</label>
+              <div class="number-input">
+                <img class="minus" src="assets/svg/minus.svg" alt="minus">
+                <input type="number" class="number-input__field" value="1" min="1">
+                <img class="plus" src="assets/svg/plus.svg" alt="plus">
+              </div>
+              <p class="total">
+                Total €<span class="total__amount">220</span> 
+              </p>
+              <button class="buy-now">Buy Now</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
