@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Forum&display=swap" rel="stylesheet">
   <title>museum</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -135,7 +132,15 @@
             <p class="explore__text">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
           </div>
           <div class="explore__slider">
-            <img src="assets/img/explore-slider/before.jpg" alt="slider-img">
+            <div class="explore__slider-1">
+              <img src="assets/img/explore-slider/before.jpg" alt="slider-img">
+            </div>
+            <div class="explore__slider-2">
+              <img  src="assets/img/explore-slider/after.jpg" alt="slider-img">
+            </div>
+            <div class="explore__slider-line">
+              <img src="assets/svg/explore-slider.svg" alt="slider-line">
+            </div>
           </div>
         </div>
       </div>
@@ -149,7 +154,7 @@
         <div class="video__wrapper">
           <video
             class="video__player" 
-            src="#!"
+            src="assets/video/video0.mp4"
             poster="assets/video/poster0.jpg"
           ></video>
           <button class="video__player-button">
@@ -226,25 +231,24 @@
         <h2 class="section-title white">Art Gallery</h2>
         <div class="gallery__content">
           <div class="gallery__content-column space">
-          <img class="gallery__img" src="assets/img/galery/galery2.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery9.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery4.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery6.jpg" alt="img">
+          <img class="gallery__img" src="assets/img/galery/galery2.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery9.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery4.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery6.jpg" alt="gallery-img">
         </div>
         <div class="gallery__content-column">
-          <img class="gallery__img" src="assets/img/galery/galery1.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery8.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery3.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery5.jpg" alt="img">
+          <img class="gallery__img" src="assets/img/galery/galery1.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery8.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery3.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery5.jpg" alt="gallery-img">
         </div>
         <div class="gallery__content-column space">
-          <img class="gallery__img" src="assets/img/galery/galery7.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery10.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery15.jpg" alt="img">
-          <img class="gallery__img" src="assets/img/galery/galery12.jpg" alt="img">
+          <img class="gallery__img" src="assets/img/galery/galery7.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery10.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery15.jpg" alt="gallery-img">
+          <img class="gallery__img" src="assets/img/galery/galery12.jpg" alt="gallery-img">
         </div>
         </div>
-      </div>
       </div>
     </section>
     <section id="tickets" class="tickets">
@@ -255,11 +259,11 @@
         </div>
         <div class="tickets__content">
           <img src="assets/img/gallery-nude.jpg" alt="gallery-img">
-          <form class="tickets__purchase" action="#">
+          <form class="tickets__purchase">
             <div class="ticket__type">
               <h4 class="ticket__option-1 form-title">Ticket Type</h4>
               <label class="option-check">
-                <input class="inp" type="radio" checked="checked" name="ticket-check">
+                <input class="inp" type="radio" checked name="ticket-check">
                 <span class="checkmark-text">Permanent exhibition</span>
               </label>
               <label class="option-check">
@@ -307,7 +311,7 @@
             <ul class="contacts__list">
             <li class="contacts__item">
               <span class="contacts__label">address:</span>
-              <span class="contacts__value">75001 Paris, France</span>
+              <span>75001 Paris, France</span>
             </li>
             <li class="contacts__item">
               <span class="contacts__label">phone:</span>
@@ -319,12 +323,72 @@
             </li>
           </ul>
           </div>
-          <div class="contacts_map">
+          <div class="contacts__map">
             <img src="assets/img/map.jpg" alt="map">
           </div>
         </div>
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+           <a class="logo" href="#">Louvre</a>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#visiting">Visiting</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#explore">Explore</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#video">Video</a>
+          </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#gallery">Gallery</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#tickets">Tickets</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social-list">
+          <li class="social-items">
+            <a class="social-link youtube" href="https://www.youtube.com/user/louvre" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link instagram" href="https://www.instagram.com/museelouvre/" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link facebook" href="https://www.facebook.com/museedulouvre" target="_blank"></a>
+          </li>
+          <li class="social-items ">
+            <a class="social-link twitter" href="http://twitter.com/museelouvre" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link pinterest" href="https://www.pinterest.fr/museedulouvre/" target="_blank"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <div class="container">
+      <div class="footer-base">
+        <p class="base-year">© 2021</p>
+        <div class="base-scoole">
+          <a class="base-scoole__link" href="https://rs.school" target="_blank">The Rolling Scopes School</a>
+        </div>
+        <p class="base-username">Username</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

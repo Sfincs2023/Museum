@@ -71,6 +71,7 @@ h2 {
 
 .logo:hover {
   color: #9D8665;
+  background: url(assets/svg/vector-gold.svg) no-repeat left top;
 }
 
 .container__header {
@@ -304,15 +305,35 @@ h2 {
 }
 
 .explore__slider {
-  display: block;
-  max-width: 720px;
+  position: relative;
+  display: flex;
+  height: 700px;
+}
+
+.explore__slider-line {
+  position: absolute;
+  left: 420px;
+}
+
+.explore__slider-1 {
+  width: 440px;
+  overflow: hidden;
+}
+
+.explore__slider-2 {
+  width: 280px;
+  overflow: hidden;
+}
+
+.explore__slider-2 img {
+  transform: translateX(-440px);
 }
 
 .video__content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 75px 0 50px;
+  align-items: center;
+  margin: 75px 0 52px;
 }
 
 .video__text {
@@ -321,7 +342,7 @@ h2 {
   font-size: 22px;
   max-width: 720px;
   margin-top: 0;
-  line-height: 42px;
+  line-height: 40px;
 }
 
 .video__wrapper {
@@ -686,12 +707,14 @@ h2 {
   height: 400px;
   background: url(assets/img/parallax.jpg);
   background-size: cover;
-  background-position: center calc(100% - 29%);
+  /* background-position: center calc(100% - 29%); */
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
 .contacts {
   padding-top: 75px;
-  padding-bottom: 74px;
+  padding-bottom: 72px;
 }
 
 .contacts__wrapper {
@@ -723,4 +746,180 @@ h2 {
 .contacts__value {
   color: #000000;
   text-decoration: none;
+}
+
+.contacts__value:hover {
+  color: #9D8665;
+}
+
+.contacts__map:hover {
+  cursor: pointer;
+}
+
+.footer {
+  padding-top: 86px;
+  padding-bottom: 52px;
+  background-color:#030303;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__logo {
+  margin-right: 145px;
+}
+
+.footer-nav {
+  display: flex;
+}
+
+.footer__list {
+  margin: 0 169px 0 0;
+  padding: 0;
+}
+
+.footer__item {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.footer__link {
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #9D8665;
+}
+
+.social-list {
+  display: flex;
+  align-self: self-end;
+  padding: 0;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.social-items {
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+  margin-left: 25px;
+}
+
+.youtube {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background: url(assets/svg/youtube.svg) no-repeat center;
+  transition: 3ms;
+}
+
+.youtube:hover {
+  border: 1px solid #9D8665;
+  background: url(assets/svg/youtube-gold.svg) no-repeat center;
+}
+
+.instagram {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background: url(assets/svg/instagram.svg) no-repeat center;
+  transition: 3ms;
+}
+
+.instagram:hover {
+  border: 1px solid #9D8665;
+  background: url(assets/svg/instagram-gold.svg) no-repeat center;
+}
+
+.facebook {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background: url(assets/svg/facebook.svg) no-repeat center;
+  transition: 3ms;
+}
+
+.facebook:hover {
+  border: 1px solid #9D8665;
+  background: url(assets/svg/facebook-gold.svg) no-repeat center;
+}
+
+.twitter {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background: url(assets/svg/twitter.svg) no-repeat center;
+  transition: 3ms;
+}
+
+.twitter:hover {
+  border: 1px solid #9D8665;
+  background: url(assets/svg/twitter-gold.svg) no-repeat center;
+}
+
+.pinterest {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  background: url(assets/svg/pinterest.svg) no-repeat center;
+  transition: 3ms;
+}
+
+.pinterest:hover {
+  border: 1px solid #9D8665;
+  background: url(assets/svg/pinterest-gold.svg) no-repeat center;
+}
+
+.footer-line {
+  height: 3px;
+  background-color: #666666;
+  margin: 25px 0 50px 0;
+}
+
+.footer-base {
+  display: flex; 
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.base-year {
+  margin: 0;
+}
+
+.base-scoole__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 34px;
+}
+
+.base-scoole__link:hover {
+  color: #9D8665;
+}
+
+.base-username {
+  margin: 0;
 }
