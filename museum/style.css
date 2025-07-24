@@ -108,6 +108,14 @@ h2 {
   color: #9D8665;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
 .welcome {
   background-color: #030303;
   padding-bottom: 60px;
@@ -929,4 +937,73 @@ h2 {
 
 .base-username {
   margin: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 6px;
+    width: 32px;
+    height: 18px;
+    background: none;
+    border: none;
+  }
+  .hamburger .hamburger__line {
+    width: 32px;
+    border: 1px solid #FFFFFF;
+  }
+  .hamburger.cross .hamburger__line:nth-child(1) {
+    transform: rotate(45deg) translateY(4px) translateX(3px);
+  }
+  .hamburger.cross .hamburger:nth-child(2) {
+    transform: rotate(-45deg) translateY(-4px) translateX(3px);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header__nav {
+    display: none;
+  }
+
+  .container__header {
+    padding: 50px 0 48px 0;
+  }
+
+  .logo {
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__header {
+    padding: 42px 0 40px 0;
+  }
+
+  .hamburger {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .container__header {
+    padding: 35px 0 33px 0;
+  }
+
+  .logo {
+    width: 138px;
+    font-size: 16px;
+  }
+
+  .logo svg {
+    width: 29px;
+    height: 16px;
+  }
+
+  .hamburger {
+    padding-bottom: 2px;
+  }
 }
