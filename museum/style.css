@@ -26,6 +26,7 @@ body {
   font-weight: 400;
   font-size: 80px;
   letter-spacing: 5px;
+  line-height: 90px;
   text-transform: uppercase;
   margin-top: 0;
 }
@@ -169,6 +170,12 @@ h2 {
   max-width: 70%;
 }
 
+.welcome__img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .welcome__img::before {
   content: '';
   position: absolute;
@@ -179,10 +186,12 @@ h2 {
 .welcome__set-img {
   position: absolute;
   height: 120px;
+  width: calc(-0.1116 * 100vw + 814.27px);
   right: 0;
   bottom: -60px;
   display: flex;
   align-items: center;
+  justify-content: end;
   background-color:#030303;
 }
 
@@ -190,21 +199,22 @@ h2 {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(16px, 0.4vw + 16px, 22px);
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 0 55px 0 74px;
+  margin-right: 55px;
 }
 
 .welcome__checkbox-img {
   display: flex;
-  width: 180px;
+  margin-right: 60px;
+  width: clamp(160px, 9.5vw, 180px);
   justify-content: space-between;
 }
 
 .checkbox-img {
-  width: 16px;
-  height: 16px;
+  width: clamp(7px, 1vw + 4px, 16px);
+  height: clamp(7px, 1vw + 4px, 16px);
   background-color: #FFFFFF;
 }
 
@@ -218,11 +228,10 @@ h2 {
 }
 
 .welcome__arrow-img {
-  padding: 0 75px 0 60px;
-}
-
-.arrow-left {
-  padding-right: 18px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 75px;
 }
 
 .arrow-left:hover {
@@ -939,7 +948,23 @@ h2 {
   margin: 0;
 }
 
+
+
+
+
 @media screen and (max-width: 1100px) {
+  .header__nav {
+    display: none;
+  }
+
+  .container__header {
+    padding: 50px 0 48px 0;
+  }
+
+  .logo {
+    align-items: baseline;
+  }
+
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -962,35 +987,123 @@ h2 {
   .hamburger.cross .hamburger:nth-child(2) {
     transform: rotate(-45deg) translateY(-4px) translateX(3px);
   }
+
+  .welcome__img {
+    max-width: 70.5%;
+  }
+
+  .welcome__content {
+    margin-top: 50px;
+  }
+
+  .section-title {
+    font-size: 50px;
+  }
+
+  .welcome__text {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .welcome__button {
+    padding: 18px 45px 17px;
+    font-size: 20px;
+  }
+
+  .welcome__pagination-img {
+    margin-right: 45px;
+  }
+  
+  .welcome__checkbox-img {
+    margin-right: 45px;
+  }
 }
 
-@media screen and (max-width: 1100px) {
-  .header__nav {
+
+
+
+
+@media screen and (max-width: 840px) {
+  .container__header {
+    padding: 43px 0 33px 0;
+  }
+  
+  .welcome {
+    padding-bottom: 0;
+  }
+  
+  .welcome__container {
+    position: static;
+  }
+
+  .welcome__content {
+    position: static;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .welcome__content .section-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .welcome__text {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+
+  .welcome__button {
     display: none;
   }
 
-  .container__header {
-    padding: 50px 0 48px 0;
+  .welcome__img {
+    position: static;
+    max-width: 100%;
   }
 
-  .logo {
-    align-items: baseline;
+  .welcome__set-img {
+    position: static;
+    height: 95px;
+    width: auto;
+    justify-content: center;
+  }
+
+  .welcome__img::before {
+    content: none;
+    background: none;
+  }
+
+  .welcome__arrow-img {
+    margin-right: 0;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container__header {
-    padding: 42px 0 40px 0;
-  }
 
+
+
+
+@media screen and (max-width: 768px) {
   .hamburger {
     padding-bottom: 5px;
   }
+
+  
+  
+  
+  
+  
+  .welcome__checkbox-img {
+    width: clamp(75px, 21vw, 160px);
+  }
 }
+
+
+
+
 
 @media screen and (max-width: 420px) {
   .container__header {
-    padding: 35px 0 33px 0;
+    padding: 35px 0 40px 0;
   }
 
   .logo {
@@ -1005,5 +1118,42 @@ h2 {
 
   .hamburger {
     padding-bottom: 2px;
+  }
+
+  .welcome__content .section-title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .welcome__text {
+    font-size: 16px;
+  }
+
+  .welcome__set-img {
+    height: 80px;
+  }
+
+  .welcome__pagination-img {
+    font-size: 16px;
+    margin-right: 23px;
+    letter-spacing: 0.4px;
+  }
+
+  .welcome__checkbox-img {
+    width: 75px;
+    margin-right: 23px;
+  }
+
+  .checkbox-img {
+    width: 7px;
+    height: 7px;
+  }
+
+  .welcome__arrow-img {
+    width: 55px;
+  }
+
+  .welcome__arrow-img img {
+    width: 20px;
   }
 }
