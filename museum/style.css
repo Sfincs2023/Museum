@@ -53,6 +53,12 @@ h2 {
   padding: 0 20px;
 }
 
+
+
+
+
+/* Header */
+
 .header {
   background-color: #030303;
 }
@@ -116,6 +122,11 @@ h2 {
 .hamburger:hover {
   cursor: pointer;
 }
+
+
+
+
+/* Welcome */
 
 .welcome {
   background-color: #030303;
@@ -244,6 +255,11 @@ h2 {
   content: url(assets/svg/hover-arrow-right.svg);
 }
 
+
+
+
+/* Visiting */
+
 .visiting {
   padding: 75px 0;
 }
@@ -252,13 +268,19 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: auto;
   row-gap: 75px;
+  column-gap: 10px;
 }
 
 .visiting__card {
+  width: 440px;
   display: block;
-  max-width: 440px;
   text-decoration: none;
+}
+
+.visiting__card img {
+  width: 100%;
 }
 
 .card-title {
@@ -951,8 +973,19 @@ h2 {
 
 
 
+/* 1100px */
 
 @media screen and (max-width: 1100px) {
+
+  .section-title {
+    margin-bottom: 12px;
+  }
+  
+  .line {
+    margin-bottom: 60px;
+  }
+
+  /* Header */
   .header__nav {
     display: none;
   }
@@ -988,6 +1021,9 @@ h2 {
     transform: rotate(-45deg) translateY(-4px) translateX(3px);
   }
 
+
+  /* Welcome */
+
   .welcome__img {
     max-width: 70.5%;
   }
@@ -1017,17 +1053,57 @@ h2 {
   .welcome__checkbox-img {
     margin-right: 45px;
   }
+
+
+  /* Visiting */
+
+  .visiting {
+  padding: 52px 0;
+  }
+
+  .visiting__cards {
+    max-width: 768px;
+    row-gap: 59px;
+  }
+
+  .visiting__card {
+    width: 330px;
+  }
+
+  .card-title {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-top: 23px;
+  }
+
+  .card-title::after {
+    width: 46%;
+  }
+
+  .card-text-1 {
+    font-size: 20px;
+  }
+
+  .card-text-2 {
+    font-size: 16px;
+  }
 }
 
 
 
 
-
+/* 840px */
 @media screen and (max-width: 840px) {
+  
+  /* Header */
+
   .container__header {
     padding: 43px 0 33px 0;
   }
   
+
+  /* Welcome */
+
   .welcome {
     padding-bottom: 0;
   }
@@ -1081,6 +1157,7 @@ h2 {
 
 
 
+/* 768px */
 
 @media screen and (max-width: 768px) {
   .hamburger {
@@ -1088,12 +1165,52 @@ h2 {
   }
 
   
-  
-  
-  
-  
+  /* Welcome */
+
+  .welcome__text {
+    margin-top: 25px;
+  }
+
   .welcome__checkbox-img {
     width: clamp(75px, 21vw, 160px);
+  }
+
+
+  /* Visiting */
+
+  .visiting {
+    padding: 26px 0;
+  }
+
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .line {
+    margin-bottom: 40px;
+  }
+
+  .visiting__cards {
+    max-width: 616px;
+    row-gap: 40px;
+  }
+
+  .visiting__card {
+    width: 280px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin: 19px 0 22px 0;
+  }
+
+  .card-title::after {
+    width: 54%;
+  }
+
+  .card-text-1 {
+    font-size: 18px;
   }
 }
 
@@ -1101,7 +1218,26 @@ h2 {
 
 
 
+/* 610px */
+
+@media screen and (max-width: 610px){
+
+  /* Visiting */
+
+  .visiting__cards {
+    justify-content: center;
+  }
+}
+
+
+
+
+/* 420px */
+
 @media screen and (max-width: 420px) {
+  
+  /* header */
+  
   .container__header {
     padding: 35px 0 40px 0;
   }
@@ -1119,6 +1255,9 @@ h2 {
   .hamburger {
     padding-bottom: 2px;
   }
+
+
+  /* Welcome */
 
   .welcome__content .section-title {
     font-size: 28px;
@@ -1155,5 +1294,31 @@ h2 {
 
   .welcome__arrow-img img {
     width: 20px;
+  }
+
+
+  /* Visiting */
+
+  .visiting {
+    padding: 40px 0;
+  }
+
+  .visiting__cards {
+    row-gap: 41px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+
+  .card-text-1 {
+    font-size: 16px;
   }
 }
