@@ -710,35 +710,42 @@ h2 {
   background-color:#710707;
 }
 
+
+/* Gallery */
+
 .gallery {
-  height: 2200px;
-  padding: 75px 0;
+  position: relative;
+  max-height: 2200px;
+  padding-top: 75px;
   background-color: #030303;
   overflow: hidden;
 }
 
+.gallery:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69%, #000000);
+}
+
 .gallery__content {
-  position: relative;
   display: flex;
   margin-top: 75px;
   column-gap: 36px;
   justify-content: space-between;
 }
 
-.gallery__content:before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 69%, #000000 85%);
-}
-
 .gallery__content-column.space {
   margin-top: 50px;
 }
 
+.gallery__content-column {
+  max-width: 450px;
+}
+
 .gallery__img {
-  width: 456px;
-  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .tickets {
@@ -1097,6 +1104,9 @@ h2 {
 
 
 /* @media screen */
+.aaa {
+  height: 200px;
+}
 
 
 
@@ -1107,6 +1117,10 @@ h2 {
   /* Video */
   .video__text {
     display: none;
+  }
+
+  .gallery {
+    max-height: 1460px;
   }
 }
 
@@ -1325,6 +1339,17 @@ h2 {
   .video__list-slider {
     margin-bottom: 60px;
   }
+
+
+  /* Gallery */
+
+  .gallery {
+    padding-top: 55px;
+  }
+
+  .gallery__content {
+    margin-top: 50px;
+  }
 }
 
 
@@ -1461,6 +1486,22 @@ h2 {
     width: 10px;
     height: 10px;
   }
+
+
+  /* Gallery */
+
+  .gallery {
+    max-height: 1220px;
+    padding-top: 25px;
+  }
+
+  .gallery__content {
+    margin-top: 25px;
+  }
+
+  .gallery__content-column:nth-of-type(3) {
+    display: none;
+  }
 }
 
 
@@ -1543,6 +1584,17 @@ h2 {
 
   .video__content {
     margin: 25px 0 0;
+  }
+
+  .video__list-slider {
+    margin-bottom: 80px;
+  }
+
+
+  /* Gallery */
+
+  .gallery__content {
+     column-gap: 24px;
   }
 }
 
@@ -1757,5 +1809,17 @@ h2 {
   .list-slider__button {
     width: 8px;
     height: 8px;
+  }
+
+
+  /* Gallery */
+
+  .gallery {
+    max-height: 757px;
+    padding-top: 40px;
+  }
+
+  .gallery__content {
+    margin-top: 45px;
   }
 }
