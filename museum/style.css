@@ -7,6 +7,11 @@ body {
   padding: 0;
 }
 
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -120,6 +125,17 @@ h2 {
 }
 
 .hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger-cross {
+  display: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger-cross:hover {
   cursor: pointer;
 }
 
@@ -258,6 +274,69 @@ h2 {
 
 
 
+/* Modal menu table*/
+
+.modal-menu-table {
+  padding: 0 35px;
+  position: absolute;
+  top: 0;
+  left: -500px;
+  transition: left 0.3s ease;
+}
+
+.modal-menu-table.show {
+  left: 0;
+}
+
+.modal-menu-table .nav-modal {
+  padding: 0;
+  margin: 34px 0;
+  text-align: start;
+  list-style: none;
+}
+
+
+.modal-menu-table .header__nav-link {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.modal-menu-table .header__nav-item {
+  width: 122px;
+  margin-bottom: 24px;
+}
+
+.modal-menu-table .modal__link-sign {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-menu-table .modal__link-sign svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .modal-menu-table .modal__img-content {
+  display: none;
+}
+
+
+
+/* Modal menu mobile */
+
+.modal-menu-mobile {
+  padding: 0 35px;
+  position: absolute;
+  top: 0;
+  left: -1000px;
+  transition: left 0.3s ease;
+}
+
+
+
 
 /* Visiting */
 
@@ -326,7 +405,6 @@ h2 {
   font-size: 18px;
   margin: 0;
 }
-
 
 
 
@@ -1539,9 +1617,9 @@ h2 {
     padding-bottom: 0;
   }
   
-  .welcome__container {
+  /* .welcome__container {
     position: static;
-  }
+  } */
 
   .welcome__content {
     position: static;
@@ -1849,6 +1927,103 @@ h2 {
     font-size: 18px;
     margin-bottom: 40px;
   }
+
+
+  /* Modal menu mobile */
+
+  .modal-menu-mobile.show {
+    padding: 10px 55px 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color:#030303;
+  }
+
+  .modal-menu-mobile .nav-modal {
+    padding: 0;
+    margin: 34px 0;
+    text-align: start;
+    list-style: none;
+  }
+
+  .modal-menu-mobile .header__nav-link {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .modal-menu-mobile .header__nav-item {
+    width: 122px;
+    margin-bottom: 25px;
+  }
+
+  .modal-menu-mobile .modal__link-sign {
+    width: 12px;
+    height: 12px;
+  }
+
+  .modal-menu-mobile .modal__link-sign svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal__img-1 {
+    max-width: 658px;
+    max-height: 194px;
+    margin-bottom: 20px;
+  }
+
+  .modal__img-1 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .modal__img-group {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+  }
+
+  .modal__img-2 {
+    max-width: 319px;
+    max-height: 162px;
+  }
+
+  .modal__img-2 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .modal__img-3 {
+    max-width: 319px;
+    max-height: 161px;
+  }
+
+  .modal__img-3 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .module-line {
+    height: 1px;
+    margin: 33px 0;
+    background-color: #FFFFFF80;
+  }
+
+  .modal__social-list {
+    display: flex;
+    max-width: 340px;
+    justify-content: space-between;
+    margin: auto;
+    list-style: none;
+    padding: 0 0 40px;
+  }
+
+  .modal__social-list .social-link {
+    margin: 0;
+  }
 }
 
 
@@ -2066,6 +2241,64 @@ h2 {
 
   .buy-now {
     font-size: 16px;
+  }
+}
+
+
+
+
+/* 500px */
+
+@media screen and (max-width: 500px) {
+
+  /* Modal menu mobile */
+
+  .modal-menu-mobile .nav-modal {
+    margin: 15px 0;
+  }
+
+  .modal__img-content {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 12px;
+  }
+
+  .modal__img-1 {
+    max-width: 95px;
+    max-height: 95px;
+    overflow: hidden;
+  }
+
+  .modal__img-1 img {
+    object-fit: cover;
+  }
+
+  .modal__img-2 {
+    max-width: 95px;
+    max-height: 95px;
+  }
+
+  .modal__img-2 img {
+    object-fit: cover;
+  }
+
+  .modal__img-3 {
+    width: 95px;
+    height: 95px;
+  }
+
+  .modal__img-3 img {
+    object-fit: contain;
+    object-position: center;
+    display: block;
+  }
+
+  .module-line {
+    margin: 26px 0 24px;
+  }
+
+  .modal__social-list {
+    width: 260px;
   }
 }
 

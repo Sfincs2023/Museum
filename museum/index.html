@@ -46,28 +46,12 @@
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </button>
-        <!-- <div class="modal-menu">
-          <ul class="nav-modal">
-            <li class="header__nav-item">
-              <a href="#visiting" class="header__nav-link">Visiting</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#explore" class="header__nav-link">Explore</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#video" class="header__nav-link">Video</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#gallery" class="header__nav-link">Gallery</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#tickets" class="header__nav-link">Tickets</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="#contacts" class="header__nav-link">Contacts</a>
-            </li>
-          </ul>
-        </div> -->
+        <button class="hamburger-cross">
+          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="33.2612" height="2.07882" transform="matrix(0.7068 0.707413 -0.7068 0.707413 1.47046 0)" fill="white"/>
+            <rect width="33.2612" height="2.07883" transform="matrix(0.707413 -0.706801 0.707413 0.706801 0 23.5093)" fill="white"/>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -101,9 +85,168 @@
               <img class="arrow-right" src="assets/svg/white-arrow-right.svg" alt="arrow-right">
             </div>
           </div>
+          <div class="modal-menu-table">
+            <ul class="nav-modal">
+              <li class="header__nav-item">
+                <a href="#visiting" class="header__nav-link">
+                  <span class="modal__link-text">Visiting</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#explore" class="header__nav-link">
+                  <span class="modal__link-text">Explore</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#video" class="header__nav-link">
+                  <span class="modal__link-text">Video</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#gallery" class="header__nav-link">
+                  <span class="modal__link-text">Gallery</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#tickets" class="header__nav-link">
+                  <span class="modal__link-text">Tickets</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#contacts" class="header__nav-link">
+                  <span class="modal__link-text">Contacts</span>
+                  <div class="modal__link-sign">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+    <div class="modal-menu-mobile">
+      <ul class="nav-modal">
+        <li class="header__nav-item">
+          <a href="#visiting" class="header__nav-link">
+            <span class="modal__link-text">Visiting</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#explore" class="header__nav-link">
+            <span class="modal__link-text">Explore</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#video" class="header__nav-link">
+            <span class="modal__link-text">Video</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#gallery" class="header__nav-link">
+            <span class="modal__link-text">Gallery</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#tickets" class="header__nav-link">
+            <span class="modal__link-text">Tickets</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#contacts" class="header__nav-link">
+            <span class="modal__link-text">Contacts</span>
+            <div class="modal__link-sign">
+              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.33352 5.53176L1.99337 0.191706C1.86985 0.068097 1.70498 0 1.52917 0C1.35337 0 1.18849 0.068097 1.06498 0.191706L0.671718 0.584873C0.415818 0.841066 0.415818 1.25745 0.671718 1.51326L5.15597 5.99751L0.666742 10.4867C0.543231 10.6104 0.475037 10.7751 0.475037 10.9508C0.475037 11.1267 0.543231 11.2915 0.666742 11.4152L1.06001 11.8083C1.18362 11.9319 1.3484 12 1.5242 12C1.7 12 1.86488 11.9319 1.98839 11.8083L7.33352 6.46336C7.45732 6.33936 7.52532 6.1738 7.52493 5.99781C7.52532 5.82112 7.45732 5.65566 7.33352 5.53176Z" fill="currentColor"/>
+              </svg>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="modal__img-content">
+        <div class="modal__img-1">
+          <img src="assets/img/modal-menu/image-1.jpg" alt="modal-img">
+        </div>
+        <div class="modal__img-group">
+          <div class="modal__img-2">
+          <img src="assets/img/modal-menu/image-2.jpg" alt="modal-img">
+        </div>
+        <div class="modal__img-3">
+          <img src="assets/img/modal-menu/image-3.jpg" alt="modal-img">
+        </div>
+        </div>
+      </div>
+      <div class="module-line"></div>
+      <ul class="modal__social-list">
+          <li class="social-items">
+            <a class="social-link youtube" href="https://www.youtube.com/user/louvre" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link instagram" href="https://www.instagram.com/museelouvre/" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link facebook" href="https://www.facebook.com/museedulouvre" target="_blank"></a>
+          </li>
+          <li class="social-items ">
+            <a class="social-link twitter" href="http://twitter.com/museelouvre" target="_blank"></a>
+          </li>
+          <li class="social-items">
+            <a class="social-link pinterest" href="https://www.pinterest.fr/museedulouvre/" target="_blank"></a>
+          </li>
+        </ul>
+    </div>
     <section id="visiting" class="visiting">
       <div class="container">
         <h2 class="section-title gold">Virtual tour</h2>
@@ -452,5 +595,6 @@
       </div>
     </div>
   </footer>
+  <script src="hamburger.js"></script>
 </body>
 </html>
