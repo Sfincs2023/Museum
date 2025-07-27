@@ -227,6 +227,7 @@ h2 {
   width: clamp(7px, 1vw + 4px, 16px);
   height: clamp(7px, 1vw + 4px, 16px);
   background-color: #FFFFFF;
+  transition: all 0.3s ease;
 }
 
 .checkbox-img.checked {
@@ -681,6 +682,7 @@ h2 {
   width: 12px;
   height: 12px;
   color: #999999;
+  transition: all 0.3s ease;
 }
 
 .list-slider__arrow svg {
@@ -699,6 +701,7 @@ h2 {
   height: 12px;
   border-radius: 50%;
   background-color: #999999;
+  transition: all 0.3s ease;
 }
 
 .list-slider__button.checked{
@@ -884,6 +887,7 @@ h2 {
   font-size: 22px;
   letter-spacing: 2px;
   background-color: #000000;
+  transition: all 0.3s ease;
 }
 
 .buy-now:hover {
@@ -910,7 +914,7 @@ h2 {
 
 .contacts {
   padding-top: 77px;
-  padding-bottom: 72px;
+  padding-bottom: 74px;
 }
 
 .contacts__wrapper {
@@ -942,6 +946,7 @@ h2 {
 .contacts__value {
   color: #000000;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .contacts__value:hover {
@@ -962,6 +967,9 @@ h2 {
 .contacts__map:hover {
   cursor: pointer;
 }
+
+
+/* Footer */
 
 .footer {
   padding-top: 86px;
@@ -998,6 +1006,7 @@ h2 {
   font-size: 22px;
   letter-spacing: 2px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .footer__link:hover {
@@ -1029,6 +1038,7 @@ h2 {
   border-radius: 50%;
   background: url(assets/svg/youtube.svg) no-repeat center;
   transition: 3ms;
+  transition: all 0.3s ease;
 }
 
 .youtube:hover {
@@ -1044,6 +1054,7 @@ h2 {
   border-radius: 50%;
   background: url(assets/svg/instagram.svg) no-repeat center;
   transition: 3ms;
+  transition: all 0.3s ease;
 }
 
 .instagram:hover {
@@ -1059,6 +1070,7 @@ h2 {
   border-radius: 50%;
   background: url(assets/svg/facebook.svg) no-repeat center;
   transition: 3ms;
+  transition: all 0.3s ease;
 }
 
 .facebook:hover {
@@ -1074,6 +1086,7 @@ h2 {
   border-radius: 50%;
   background: url(assets/svg/twitter.svg) no-repeat center;
   transition: 3ms;
+  transition: all 0.3s ease;
 }
 
 .twitter:hover {
@@ -1089,6 +1102,7 @@ h2 {
   border-radius: 50%;
   background: url(assets/svg/pinterest.svg) no-repeat center;
   transition: 3ms;
+  transition: all 0.3s ease;
 }
 
 .pinterest:hover {
@@ -1121,6 +1135,7 @@ h2 {
   color: #FFFFFF;
   text-decoration: none;
   padding-left: 34px;
+  transition: all 0.3s ease;
 }
 
 .base-scoole__link:hover {
@@ -1136,10 +1151,7 @@ h2 {
 
 
 /* @media screen */
-.aaa {
-  height: 200px;
-  background-color: #666666;
-}
+
 
 
 
@@ -1258,6 +1270,31 @@ h2 {
     width: 282px;
     flex-shrink: 0;
     margin-right: 10px;
+  }
+
+
+  /* Footer */
+
+  .footer {
+    padding-top: 60px;
+  }
+
+  .footer__logo {
+    margin-right: 40px;
+  }
+
+  .footer-nav {
+    width: 310px;
+    justify-content: space-between;
+    padding-top: 5px;
+  }
+
+  .footer__list {
+    margin-right: 0;
+  }
+
+  .social-list {
+    margin-bottom: 22px;
   }
 }
 
@@ -1654,6 +1691,40 @@ h2 {
   .total {
     margin: 38px 0 40px;
   }
+
+
+  /* Footer */
+
+  .footer {
+    padding-top: 48px;
+  }
+
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+     margin-right: 98px;
+  }
+
+  .footer-nav {
+    width: 342px;
+    padding-top: 10px;
+  }
+
+  .footer__link {
+    font-weight: 200;
+    font-size: 18px;
+  }
+
+  .social-list {
+    margin: 25px 90px 0 auto;
+  }
+
+  .footer-line {
+    height: 1px;
+    margin: 35px 0 40px;
+  }
 }
 
 
@@ -1831,6 +1902,74 @@ h2 {
 
 
 
+/* 690px */
+
+@media screen and (max-width: 690px) {
+
+  /* Footer */
+
+  .footer {
+    padding-top: 40px;
+  }
+
+  .footer__logo .logo {
+    width: 131px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .footer-nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  .footer__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__item {
+    margin-bottom: 29px;
+  }
+
+  .footer__link {
+    font-weight: 200;
+    font-size: 16px;
+  }
+
+  .social-list {
+    width: 260px;
+    justify-content: space-between;
+    margin: 11px auto 0;
+  }
+
+  .social-link {
+    margin: 0;
+  }
+
+  .footer-line {
+    margin: 37px 0 40px;
+  }
+
+  .base-year {
+    font-weight: 200;
+    font-size: 16px;
+  }
+
+  .base-scoole {
+    display: none;
+  }
+
+  .base-username {
+    font-weight: 200;
+    font-size: 16px;
+  }
+}
+
+
+
 
 /* 610px */
 
@@ -1943,7 +2082,7 @@ h2 {
     padding: 35px 0 40px 0;
   }
 
-  .logo {
+  .container__header .logo {
     width: 138px;
     font-size: 16px;
   }
