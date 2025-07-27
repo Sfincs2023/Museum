@@ -55,7 +55,8 @@ window.addEventListener('resize', () => {
         welcome.style.display = "block";
         modalMenuTable.classList.remove('show');
         body.classList.remove('no-scroll');
-    } else {
+    } 
+    else {
         btnHamburger.style.display = 'flex';
     }
 });
