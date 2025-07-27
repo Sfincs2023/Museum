@@ -1699,6 +1699,13 @@ h2 {
   .gallery__content {
      column-gap: 24px;
   }
+
+
+  /* Parallax */
+
+  .parallax {
+    height: 300px;
+  }
 }
 
 
