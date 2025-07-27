@@ -892,18 +892,24 @@ h2 {
   cursor: pointer;
 }
 
+
+/* Parallax */
+
 .parallax {
   width: 100%;
   height: 400px;
   background: url(assets/img/parallax.jpg);
   background-size: cover;
-  /* background-position: center calc(100% - 29%); */
   background-position: bottom;
   background-attachment: fixed;
 }
 
+
+
+/* Contakts */
+
 .contacts {
-  padding-top: 75px;
+  padding-top: 77px;
   padding-bottom: 72px;
 }
 
@@ -940,6 +946,17 @@ h2 {
 
 .contacts__value:hover {
   color: #9D8665;
+}
+
+.contacts__map {
+  max-width: 960px;
+  max-height: 620px;
+}
+
+.contacts__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contacts__map:hover {
@@ -1229,6 +1246,19 @@ h2 {
   .total__amount {
     margin-left: 15px;
   }
+
+
+   /* Contacts */
+
+  .contacts {
+    padding: 55px 0 65px;
+  }
+
+  .contacts__info {
+    width: 282px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
 }
 
 
@@ -1428,7 +1458,26 @@ h2 {
   /* Tickets */
 
   .tickets {
-    padding: 55px 0;
+    padding: 55px 0 58px;
+  }
+
+  /* Contacts */
+
+  .contacts__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .contacts__list {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .contacts__item {
+    margin-bottom: 15px;
   }
 }
 
@@ -1705,6 +1754,29 @@ h2 {
 
   .parallax {
     height: 300px;
+  }
+
+
+  /* Contacts */
+
+  .contacts {
+    padding: 25px 0 68px;
+  }
+
+  .contacts__wrapper {
+    display: block;
+  }
+
+  .contacts__title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__list {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1990,5 +2062,22 @@ h2 {
 
   .gallery__content {
     margin-top: 45px;
+  }
+
+
+  /* Contacts */
+
+  .contacts {
+    padding: 40px 0;
+  }
+
+  .contacts__title {
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .contacts__list {
+    font-weight: 300;
+    font-size: 16px;
   }
 }
