@@ -31,7 +31,7 @@ document.addEventListener('click', (event) => {
   const clickedInsideMenu = event.target.closest('.modal-menu-table');
   const clickedHamburger = event.target.closest('.hamburger');
 
-  if (!clickedInsideMenu && !clickedHamburger) {
+  if (!clickedInsideMenu && !clickedHamburger && window.innerWidth < 1100) {
     closeMenu();
   }
 });
@@ -48,15 +48,15 @@ btnCross.addEventListener('click', (event) => {
     }
 });
 
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 1100) {
-        btnHamburger.style.display = 'none';
-        btnCross.style.display = 'none';
-        welcome.style.display = "block";
-        modalMenuTable.classList.remove('show');
-        body.classList.remove('no-scroll');
-    } 
-    else {
-        btnHamburger.style.display = 'flex';
-    }
-});
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 1100) {
+//         btnHamburger.style.display = 'none';
+//         btnCross.style.display = 'none';
+//         welcome.style.display = "block";
+//         modalMenuTable.classList.remove('show');
+//         body.classList.remove('no-scroll');
+//     } 
+//     else {
+//         btnHamburger.style.display = 'flex';
+//     }
+// });
