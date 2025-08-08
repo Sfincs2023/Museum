@@ -495,14 +495,8 @@ h2 {
   display: grid;
   place-content: center;
   position: relative;
-  overflow: hidden;
-  /* --position: 50%; */
+  --position: 61%;
 }
-
-/* .explore__slider-wrapper {
-  max-width: 720px;
-  max-height: 700px;
-} */
 
 .explore__img {
   display: block;
@@ -515,8 +509,7 @@ h2 {
 .image-before {
   position: absolute;
   inset: 0;
-  /* width: var(--position); */
-  width: 61%;
+  width: var(--position);
 }
 
 .explore__slider {
@@ -531,7 +524,7 @@ h2 {
 .explore__slider-line-top {
   position: absolute;
   top: 0;
-  left: 61%;
+  left: var(--position);
   width: clamp(3px, 0.5vw, 5px);
   height: 47.5%;
   background-color: #FFFFFF;
@@ -542,7 +535,7 @@ h2 {
 .explore__slider-button {
   position: absolute;
   top: 50%;
-  left: 61%;
+  left: var(--position);
   width: clamp(20px, 5vw, 40px);
   height: clamp(20px, 5vw, 40px);
   border: clamp(3px, 0.5vw, 5px) solid #FFFFFF;
@@ -555,7 +548,7 @@ h2 {
 .explore__slider-line-bottom {
   position: absolute;
   bottom: 0;
-  left: 61%;
+  left: var(--position);
   width: clamp(3px, 0.5vw, 5px);
   height: 47.5%;
   background-color: #FFFFFF;
