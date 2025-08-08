@@ -1046,7 +1046,7 @@ h2 {
 
 
 
-/* Contakts */
+/* Contacts */
 
 .contacts {
   padding-top: 77px;
@@ -1090,19 +1090,11 @@ h2 {
 }
 
 .contacts__map {
-  max-width: 960px;
-  max-height: 620px;
+  width: 960px;
+  height: 620px;
 }
 
-.contacts__map img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.contacts__map:hover {
-  cursor: pointer;
-}
 
 
 /* Footer */
@@ -1621,6 +1613,13 @@ h2 {
   .gallery__content {
     margin-top: 50px;
   }
+
+  /* Contacts */
+
+  .contacts__map {
+  width: 694px;
+  height: 454px;
+  }
 }
 
 
@@ -1655,6 +1654,20 @@ h2 {
   }
 }
 
+
+
+
+/* 1000px */
+
+@media screen and (max-width: 1000px) {
+  
+  /* Contacts */
+
+  .contacts__map {
+  width: 554px;
+  height: 454px;
+  }
+}
 
 
 
@@ -1987,6 +2000,11 @@ h2 {
     margin-bottom: 40px;
   }
 
+  .contacts__map {
+    width: 100%;
+    height: 476px;
+  }
+
 
   /* Modal menu mobile */
 
@@ -2300,6 +2318,14 @@ h2 {
 
   .buy-now {
     font-size: 16px;
+  }
+
+
+  /* Contacts */
+
+  .contacts__map {
+    width: 100%;
+    height: 248px;
   }
 }
 
