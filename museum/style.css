@@ -875,6 +875,16 @@ h2 {
 .gallery__img {
   width: 100%;
   margin-bottom: 25px;
+
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gallery__img.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
