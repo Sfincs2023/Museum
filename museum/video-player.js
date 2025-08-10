@@ -49,6 +49,11 @@ function updateProgressBackground(value) {
   progress.style.background = `linear-gradient(to right, #710707 0%, #710707 ${value}%, #C4C4C4 ${value}%, #C4C4C4 100%)`;
 }
 
+videoPlayer.addEventListener('loadedmetadata', () => {
+  progress.value = 0;
+  updateProgressBackground(0);
+});
+
 videoPlayer.addEventListener('timeupdate', () => {
   const progressPercent = (videoPlayer.currentTime / videoPlayer.duration) * 100;
   progress.value = progressPercent;
